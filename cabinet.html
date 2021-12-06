@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>GASS - Личный кибинет</title>
+</head>
+<body>
+    <div class="wrapper">
+    <header class="header">
+        <div class="header__container _container">
+            <div class="header__logo">
+                <a href="index.php">
+                    Global Anus Settings Service
+                </a>
+            </div>
+            <a href="index.php" class="header__logo--adaptive">
+                GASS
+            </a>
+            <div class="header__menu-icon">
+                <img src="img/menu.png" alt="" onclick="menu__openClose()">
+            </div>
+        </div>
+    </header>
+        <div class="setting">
+            <div class="setting__container _container">
+                <div class="setting__row">
+                    <div class="setting__title-block">
+                        <div class="setting__title">Настройки</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cabinet">
+            <div class="cabinet__container _container">
+                <div class="container__header">
+                    <div class="cabinet__title-block">
+                        <div class="cabinet__title">
+                            Меню контроля 
+                        </div>
+                        <div class="cabinet__sub-title">
+                            Пользователь: <span id="user_name">Абдула</span>
+                        </div>                    
+                    </div>
+                    <div class="dificult">
+                        <button class="dificult__item useless" onclick="useless_option_show()">
+                            <div class="dificult__item-text">Отрицательные опции</div>
+                        </button>
+                        <button class="dificult__item useful" onclick="useful_option_show()">
+                            <div class="dificult__item-text">Положительные опции</div>
+                        </button>
+                        <button class="dificult__item hard" onclick="hard_option_show()">
+                            <div class="dificult__item-text">Жестокие опции</div>
+                        </button>
+                    </div>
+                </div>
+                <div class="cabinet__body">
+                    <div class="cabinet__body-title">
+                        <div class="cabinet__body-title-text">
+                            Список опций:
+                        </div>
+                        <div class="cabinet__button_main">
+                            <button class="cabinet__save" onclick="deactive()">Отменить выбор</button>
+                            <button class="cabinet__save">Сохранить</button>
+                        </div>
+                    </div>
+                    <div class="preload _active">
+                        <div class="preload__container _container">
+                            <div class="preload__content">
+                               <span>...</span>Начните работу выбрав характер опций<span>...</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cabinet__useless-option _cabinet_option">
+                        <div class="cabinet__useless-option-item _cabinet_option-item">
+                            <div class="cabinet__useless-option-item-text _option-item-text">Жгучий понос <span class="detecter_1"> •</span></div>
+                            <div class="cabinet_option-item__button">
+                                <button id="card_1" class="useless__item__button _item__button" onclick="active_1()">Активировать</button>
+                                <button class="useless__item__button _item__button">Настроить</button>
+                            </div>
+                        </div>
+                        <div class="cabinet__useless-option-item _cabinet_option-item">
+                            <div class="cabinet__useless-option-item-text _option-item-text">Запор <span class="detecter_2"> •</span></div>
+                            <div class="cabinet_option-item__button">
+                                <button id="card_2" class="useless__item__button _item__button" onclick="active_2()">Активировать</button>
+                                <button class="useless__item__button _item__button">Настроить</button>
+                            </div>
+                        </div>
+                        <div class="cabinet__useless-option-item _cabinet_option-item">
+                            <div class="cabinet__useless-option-item-text _option-item-text">Анальный герпес <span class="detecter_3"> •</span></div>
+                            <div class="cabinet_option-item__button">
+                                <button id="card_3" class="useless__item__button _item__button" onclick="active_3()">Активировать</button>
+                                <button class="useless__item__button _item__button">Настроить</button>
+                            </div>                           
+                        </div>
+                        <div class="cabinet__useless-option-item _cabinet_option-item">
+                            <div class="cabinet__useless-option-item-text _option-item-text">Разрыв ануса <span class="detecter_4"> •</span> </div>
+                            <div class="cabinet_option-item__button">
+                                <button id="card_4" class="useless__item__button _item__button" onclick="active_4()">Активировать</button>
+                                <button class="useless__item__button _item__button">Настроить</button>
+                            </div>
+                        </div>
+                        <div class="cabinet__useless-option-item _cabinet_option-item">
+                            <div class="cabinet__useless-option-item-text _option-item-text">Анальный зуд <span class="detecter_5"> •</span></div>
+                            <div class="cabinet_option-item__button">
+                                <button id="card_5" class="useless__item__button _item__button" onclick="active_5()">Активировать</button>
+                                <button class="useless__item__button _item__button">Настроить</button>
+                            </div>
+                        </div>
+                        <div class="cabinet__useless-option-item _cabinet_option-item">
+                            <div class="cabinet__useless-option-item-text _option-item-text">Анальная боль <span class="detecter_6"> •</span></div>
+                            <div class="cabinet_option-item__button">
+                                <button id="card_6" class="useless__item__button _item__button" onclick="active_6()">Активировать</button>
+                                <button class="useless__item__button _item__button">Настроить</button>
+                            </div>
+                        </div>
+                        <div class="cabinet__useless-option-item _cabinet_option-item">
+                            <div class="cabinet__useless-option-item-text _option-item-text">Порция подливы в трусы <span class="detecter_7"> •</span></div>
+                            <div class="cabinet_option-item__button">
+                                <button id="card_7" class="useless__item__button _item__button" onclick="active_7()">Активировать</button>
+                                <button class="useless__item__button _item__button">Настроить</button>
+                            </div>
+                        </div>
+                        <div class="cabinet__useless-option-item _cabinet_option-item">
+                            <div class="cabinet__useless-option-item-text _option-item-text">Ощущение члена <span class="detecter_8"> •</span></div>
+                            <div class="cabinet_option-item__button">
+                                <button id="card_8" class="useless__item__button _item__button" onclick="active_8()">Активировать</button>
+                                <button class="useless__item__button _item__button">Настроить</button>
+                            </div>
+                        </div>
+                        <div class="cabinet__useless-option-item _cabinet_option-item">
+                            <div class="cabinet__useless-option-item-text _option-item-text">Вызов широкого говна <span class="detecter_9"> •</span></div>
+                            <div class="cabinet_option-item__button">
+                                <button id="card_9" class="useless__item__button _item__button" onclick="active_9()">Активировать</button>
+                                <button class="useless__item__button _item__button">Настроить</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cabinet__useful-option _cabinet_option">
+                        <div class="cabinet__useful-option-item _cabinet_option-item">
+                            <div class="cabinet__useful-option-item-text _option-item-text">Остановить жгучий понос</div>
+                            <div class="cabinet_option-item__button">
+                                <button class="useful__item__button _item__button">Активировать</button>
+                                <button class="useful__item__button _item__button">Настроить</button>
+                            </div>
+                        </div>
+                        <div class="cabinet__useful-option-item _cabinet_option-item">
+                            <div class="cabinet__useful-option-item-text _option-item-text">Отменить ощущение члена</div>
+                            <div class="cabinet_option-item__button">
+                                <button class="useful__item__button _item__button">Активировать</button>
+                                <button class="useful__item__button _item__button">Настроить</button>
+                            </div>
+                        </div>
+                        <div class="cabinet__useful-option-item _cabinet_option-item">
+                            <div class="cabinet__useful-option-item-text _option-item-text">Убрать анальный герпес</div>
+                            <div class="cabinet_option-item__button">
+                                <button class="useful__item__button _item__button">Активировать</button>
+                                <button class="useful__item__button _item__button">Настроить</button>
+                            </div>
+                        </div>
+                        <div class="cabinet__useful-option-item _cabinet_option-item">
+                            <div class="cabinet__useful-option-item-text _option-item-text">Залечить анальный разрыв</div>
+                            <div class="cabinet_option-item__button">
+                                <button class="useful__item__button _item__button">Активировать</button>
+                                <button class="useful__item__button _item__button">Настроить</button>
+                            </div>
+                        </div>
+                        <div class="cabinet__useful-option-item _cabinet_option-item">
+                            <div class="cabinet__useful-option-item-text _option-item-text">Прекратить анальную боль</div>
+                            <div class="cabinet_option-item__button">
+                                <button class="useful__item__button _item__button">Активировать</button>
+                                <button class="useful__item__button _item__button">Настроить</button>
+                            </div>
+                        </div>
+                        <div class="cabinet__useful-option-item _cabinet_option-item">
+                            <div class="cabinet__useful-option-item-text _option-item-text">Втянуть говно обратно в жопу</div>
+                            <div class="cabinet_option-item__button">
+                                <button class="useful__item__button _item__button">Активировать</button>
+                                <button class="useful__item__button _item__button">Настроить</button>
+                            </div>
+                        </div>
+                        <div class="cabinet__useful-option-item _cabinet_option-item">
+                            <div class="cabinet__useful-option-item-text _option-item-text">Отменить анальный зуд</div>
+                            <div class="cabinet_option-item__button">
+                                <button class="useful__item__button _item__button">Активировать</button>
+                                <button class="useful__item__button _item__button">Настроить</button>
+                            </div>
+                        </div>
+                        <div class="cabinet__useful-option-item _cabinet_option-item">
+                            <div class="cabinet__useful-option-item-text _option-item-text">Помассировать сфинктер</div>
+                            <div class="cabinet_option-item__button">
+                                <button class="useful__item__button _item__button">Активировать</button>
+                                <button class="useful__item__button _item__button">Настроить</button>
+                            </div>
+                        </div>
+                        <div class="cabinet__useful-option-item _cabinet_option-item">
+                            <div class="cabinet__useful-option-item-text _option-item-text">Убрать желание покакать</div>
+                            <div class="cabinet_option-item__button">
+                                <button class="useful__item__button _item__button">Активировать</button>
+                                <button class="useful__item__button _item__button">Настроить</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cabinet__hard-option _cabinet_option">
+                        <div class="cabinet__hard-option-item _cabinet_option-item">
+                            <div class="cabinet__hard-option-item-text _option-item-text">Мыльница между булками</div>
+                            <div class="cabinet_option-item__button">
+                                <button class="hard__item__button _item__button">Активировать</button>
+                                <button class="hard__item__button _item__button">Настроить</button>
+                            </div>
+                        </div>         
+                        <div class="cabinet__hard-option-item _cabinet_option-item">
+                            <div class="cabinet__hard-option-item-text _option-item-text">Жжение в анусе</div>
+                            <div class="cabinet_option-item__button">
+                                <button class="hard__item__button _item__button">Активировать</button>
+                                <button class="hard__item__button _item__button">Настроить</button>
+                            </div>
+                        </div>      
+                        <div class="cabinet__hard-option-item _cabinet_option-item">
+                            <div class="cabinet__hard-option-item-text _option-item-text">Схлопнуть сфинктер</div>
+                            <div class="cabinet_option-item__button">
+                                <button class="hard__item__button _item__button">Активировать</button>
+                                <button class="hard__item__button _item__button">Настроить</button>
+                            </div>
+                        </div>           
+                    </div>
+                </div>   
+            </div>
+        </div>
+        <?php 
+            require "secondpages/footer.php";
+        ?>
+    </div>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/checkform.js"></script>
+</body>
+</html>

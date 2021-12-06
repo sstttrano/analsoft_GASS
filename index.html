@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>GASS - by ssttrano</title>
+	<link rel="stylesheet" href="style/style.css">
+</head>
+<body> 
+	<div class="wrapper">
+	<header class="header">
+	    <div class="header__container _container">
+	        <div class="header__logo">
+	            <a href="index.php">
+	                Global Anus Settings Service
+	            </a>
+	        </div>
+	        <a href="index.php" class="header__logo--adaptive">
+	            GASS
+	        </a>
+	        <div class="header__menu-icon">
+	            <img src="img/menu.png" alt="" onclick="menu__openClose()">
+	        </div>
+	    </div>
+	</header>
+		<div class="registration">
+			<div class="registration__container _container">
+				<div class="registration__row">
+					
+				</div>
+			</div>
+		</div>
+		<div class="firstScreen">
+			<div class="firstScreen__container _container">
+				<div class="firstScreen__row">
+					<div class="firstScreen__title-block">
+						<div class="firstScreen__title">Вход в личный кабинет</div>
+						<div class="firstScreen__btn">
+							<button class="firstScreen__sub-title">Информация о сайте</button>
+							<button class="firstScreen__sub-title">Зарегистрироваться</button>
+						</div>
+					</div>	
+					<form action="signIn.html" class="firstScreen__UI">
+						<div class="firstScreen__name _firstScreen__item">
+							<div class="firstScreen__name-text _firstScreen__text">Имя пользователя <span>→</span></div>
+							<input id="name" type="text" name="name" class="firstScreen__input" required>
+						</div>
+						<div class="firstScreen__id _firstScreen__item">
+							<div class="firstScreen__id-text _firstScreen__text">ID <span>→</span></div>
+							<input id="id" type="text" name="id" class="firstScreen__input" required>
+						</div>
+						<div class="firstScreen__password _firstScreen__item">
+							<div class="firstScreen__password-text _firstScreen__text">Пароль <span>→</span></div>
+							<input id="password" type="password" name="password" class="firstScreen__input" required>
+						</div>
+						<button type="submit" class="firstScreen__button" onclick="formCheck()">Подключиться</button>
+					</form>	
+				</div>
+			</div>
+		</div>
+		<footer class="footer">
+			<div class="footer__container _container">
+				<div class="footer__text">
+					<a href="#">©SSTTRANO™</a> 2021
+				</div>
+			</div>
+		</footer>
+		<div class="setting">
+			<div class="setting__container _container">
+				<div class="setting__row">
+					<div class="setting__title-block">
+						<div class="setting__title">Настройки</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="error hidden">
+			<div class="error__container _container">
+				<div class="error__body">
+					<div class="footer__close">
+						<img src="img/close.png" onclick="error_close()" alt="">
+					</div>
+					<div class="error__text">
+						Это пример всплывающей ошибки
+					</div>					
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="js/checkform.js"></script>
+</body>
+</html>
